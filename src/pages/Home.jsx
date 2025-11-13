@@ -45,10 +45,10 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
             >
-              Professional
+              Website
               <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent block mt-2">
-                Web Development Services
-              </span>
+                Design / Development 
+              </span> Services
             </motion.h1>
             
             <motion.p 
