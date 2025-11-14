@@ -116,10 +116,10 @@ const Services = () => {
               </ul>
               
               <div className={`${getServiceColor(activeService).light} p-6 rounded-xl border ${getServiceColor(activeService).primary} border-opacity-20`}>
-                <h4 className={`font-semibold ${getServiceColor(activeService).text} mb-2`}>Technologies Used:</h4>
+                <h4 className={`font-semibold text-white mb-2`}>Technologies Used:</h4>
                 <div className="flex flex-wrap gap-2">
                   {["PHP", "React", "Node.js", "MySQL", "MongoDB", "Tailwind CSS"].map((tech, index) => (
-                    <span key={index} className={`${getServiceColor(activeService).light} ${getServiceColor(activeService).text} px-3 py-1 rounded-full text-sm border ${getServiceColor(activeService).primary} border-opacity-30`}>
+                    <span key={index} className={`${getServiceColor(activeService).light} text-white px-3 py-1 rounded-full text-sm border ${getServiceColor(activeService).primary} border-opacity-30`}>
                       {tech}
                     </span>
                   ))}
