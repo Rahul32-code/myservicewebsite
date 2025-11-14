@@ -5,7 +5,7 @@ import { ArrowRight, Star, Zap, Rocket, Phone, MessageCircle, CheckCircle } from
 import { useInView } from "react-intersection-observer";
 import StatsSection from "../components/StatsSection";
 import ServicesCard from "../components/ServiceCard";
-import PortfolioCard from "./PortfolioCard";
+import PortfolioCard from "../components/PortfolioCard";
 import CTASection from "../components/CTASection";
 
 const Counter = ({ value, suffix = "", color = "text-blue-600" }) => {
