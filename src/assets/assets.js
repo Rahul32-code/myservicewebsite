@@ -20,6 +20,8 @@ import {
   Heart,
   Coffee,
   TrendingUp,
+  Target,
+  Award,
 } from "lucide-react";
 
 import logo from "./logo.svg";
@@ -249,39 +251,42 @@ export const statsData = [
   },
 ];
 
-// About Page के लिए Alternative Stats
-export const aboutStats = [
+export const WhyChooseUsCards = [
   {
-    number: "100",
-    suffix: "+",
-    label: "Happy Clients",
-    color: "text-blue-600",
-    icon: Heart,
-    description: "Satisfied customers",
-  },
-  {
-    number: "150",
-    suffix: "+",
-    label: "Cups of Coffee",
-    color: "text-purple-600",
-    icon: Coffee,
-    description: "While coding",
-  },
-  {
-    number: "99",
-    suffix: "%",
-    label: "Success Rate",
-    color: "text-green-600",
-    icon: TrendingUp,
-    description: "Project success",
-  },
-  {
-    number: "5",
-    suffix: "+",
-    label: "Technologies",
-    color: "text-orange-600",
     icon: Code,
-    description: "Mastered technologies",
+    title: "Clean Code",
+    description:
+      "I write maintainable, scalable code following best practices and industry standards.",
+  },
+  {
+    icon: Rocket,
+    title: "Fast Delivery",
+    description:
+      "Quick turnaround times without compromising on quality and attention to detail.",
+  },
+  {
+    icon: Users,
+    title: "Client Focused",
+    description:
+      "Your satisfaction is my priority. I work closely with you to understand your vision.",
+  },
+  {
+    icon: Target,
+    title: "Result Driven",
+    description:
+      "Focus on delivering solutions that drive real business results and user engagement.",
+  },
+  {
+    icon: Award,
+    title: "Quality Assurance",
+    description:
+      "Rigorous testing and quality checks to ensure bug-free, smooth performance.",
+  },
+  {
+    icon: Heart,
+    title: "Passionate",
+    description:
+      "Genuine love for development that translates into exceptional work quality.",
   },
 ];
 
