@@ -91,11 +91,11 @@ const Home = () => {
               </Link>
               
               <Link 
-                to="/portfolio" 
+                to="/project" 
                 className="border-2 border-blue-500 text-blue-600 px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold text-base md:text-lg hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center gap-2"
               >
                 <Star size={20} />
-                View My Work
+                View Our Work
               </Link>
             </motion.div>
             

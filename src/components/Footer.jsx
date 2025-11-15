@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { assets, menuLinks, socialLinks } from "../assets/assets";
 import { Mail, MapPin, Phone } from "lucide-react";
+import {portfolioItems} from "../assets/assets";
 
 const Footer = () => {
   const contactInfo = [
@@ -33,16 +34,6 @@ const Footer = () => {
     };
     return colors[platform] || "hover:bg-teal-600 hover:border-teal-600 text-teal-600";
   };
-
-  // Safe services list
-  const services = menuLinks.find((link) => link.name === "Services")?.dropdown || [
-    { name: "Landing Pages", path: "/services/landing-pages" },
-    { name: "E-Commerce", path: "/services/ecommerce" },
-    { name: "Blog Websites", path: "/services/blog" },
-    { name: "CMS Development", path: "/services/cms" },
-    { name: "LMS Platforms", path: "/services/lms" },
-    { name: "Dynamic Websites", path: "/services/dynamic" }
-  ];
 
   return (
     <footer className="relative overflow-hidden">
@@ -111,13 +102,13 @@ const Footer = () => {
               Services
             </h3>
             <ul className="space-y-2 text-gray-700">
-              {services.map((service, index) => (
+              {portfolioItems.map((service, index) => (
                 <li key={index}>
                   <Link
-                    to={service.path}
+                    to={service.title}
                     className="hover:text-teal-600 transition-all duration-200 hover:translate-x-1 inline-block"
                   >
-                    {service.name}
+                    {service.title}
                   </Link>
                 </li>
               ))}
