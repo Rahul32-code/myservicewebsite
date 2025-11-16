@@ -12,6 +12,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Project from "./pages/Project";
 import Faq from "./pages/Faq.Page";
 import TAndC from "./pages/TAndC";
+import Privacy from "./pages/Privacy";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Project" element={<Project />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/terms" element={<TAndC />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
