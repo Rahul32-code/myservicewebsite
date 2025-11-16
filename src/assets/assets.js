@@ -33,7 +33,6 @@ export const assets = {
 
 // Menu links
 export const menuLinks = [
-  { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   {
     name: "Services",
@@ -48,6 +47,7 @@ export const menuLinks = [
     ],
   },
   { name: "Projects", path: "/project" },
+  { name: "Blog", path: "#" },
   { name: "Contact", path: "/contact" },
 ];
 

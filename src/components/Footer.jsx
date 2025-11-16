@@ -79,11 +79,7 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-2 text-gray-700">
-              {[
-                { name: "Home", path: "/" },
-                { name: "About Us", path: "/about" },
-                { name: "Contact", path: "/contact-us" },
-              ].map((item, index) => (
+              {menuLinks.map((item, index) => (
                 <li key={index}>
                   <Link
                     to={item.path}
