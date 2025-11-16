@@ -22,6 +22,7 @@ import {
   TrendingUp,
   Target,
   Award,
+  Instagram,
 } from "lucide-react";
 
 import logo from "./logo.svg";
@@ -54,24 +55,24 @@ export const menuLinks = [
 export const socialLinks = [
   {
     icon: Github,
-    link: "https://github.com",
+    link: "https://github.com/Rahul32-code",
     name: "Github",
   },
   {
     icon: Linkedin,
-    link: "https://linkedin.com",
+    link: "https://www.linkedin.com/in/rahul-gupta-8497aa249/",
     name: "Linkedin",
   },
   {
-    icon: Twitter,
-    link: "https://twitter.com",
-    name: "Twitter",
-  },
-  {
     icon: Facebook,
-    link: "https://facebook.com",
+    link: "https://www.facebook.com/rahul.webdeveloper/",
     name: "Facebook",
   },
+  {
+    icon: Instagram,
+    link: "https://www.instagram.com/rahuldeveloper/",
+    name: "Instagram",
+  }
 ];
 
 // Services data

@@ -8,17 +8,17 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: <Phone className="h-5 w-5 text-sky-400" />,
-      name: "+91 9876 54321",
-      href: "tel:+91987654321",
+      name: "+91 962-5968-793",
+      href: "tel:+919625968793",
     },
     {
       icon: <Mail className="h-5 w-5 text-rose-400" />,
-      name: "test@s.com",
-      href: "mailto:test@s.com",
+      name: "rahuldeveloper75@gmail.com",
+      href: "mailto:rahuldeveloper75@gmail.com",
     },
     {
       icon: <MapPin className="h-5 w-5 text-green-400" />,
-      name: "123 Business Street, Delhi",
+      name: "Ghaziabad, Uttar Pradesh",
     },
   ];
 

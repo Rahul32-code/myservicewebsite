@@ -29,7 +29,7 @@ const About = () => {
               transition={{ duration: 0.7 }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                About <span className="text-blue-600">Me</span>
+                About <span className="text-blue-600">Us</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
                 I'm a passionate web developer with over 3 years of experience creating 
@@ -88,7 +88,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                My <span className="text-blue-600">Journey</span>
+                Our <span className="text-blue-600">Journey</span>
               </h2>
               
               <div className="space-y-4 text-gray-700">
@@ -148,7 +148,7 @@ const About = () => {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              My <span className="text-blue-600">Skills</span>
+              Our <span className="text-blue-600">Skills</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Technologies and tools I use to bring ideas to life
@@ -205,7 +205,7 @@ const About = () => {
             className="text-center mb-12 md:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why <span className="text-blue-600">Choose Me?</span>
+              Why <span className="text-blue-600">Choose Us?</span>
             </h2>
           </motion.div>
 
