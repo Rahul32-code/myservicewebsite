@@ -84,15 +84,15 @@ const Privacy = () => {
           <h2 className="text-2xl font-semibold mb-3">10. Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, please contact us at:</p>
           <div className="mt-2 p-4 bg-gray-100 rounded">
-            <p>Email: privacy@yourcompany.com</p>
-            <p>Address: [Your Company Address]</p>
-            <p>Phone: [Your Contact Number]</p>
+            <p>Email: info@rahulcode.in</p>
+            <p>Address: Ghaziabad, Uttar Pradesh</p>
+            <p>Phone: +91 9625968793</p>
           </div>
         </section>
 
         <div className="mt-8 p-4 bg-blue-50 rounded">
           <p className="text-sm text-gray-600">
-            <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
+            <strong>Last Updated:</strong> 1 November 2025    
           </p>
         </div>
       </div>

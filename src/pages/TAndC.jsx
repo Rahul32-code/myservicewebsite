@@ -6,99 +6,12 @@ import {
   FileText, 
   Clock, 
   AlertCircle,
-  CheckCircle,
   ArrowRight
 } from "lucide-react";
+import TermSectionCards from "../components/TermSectionCards";
 
 const TAndC = () => {
-  const lastUpdated = "January 1, 2024";
-
-  const sections = [
-    {
-      title: "Introduction",
-      content: "Welcome to Rahul Developer. These Terms and Conditions govern your use of my website and services. By accessing or using my services, you agree to be bound by these Terms."
-    },
-    {
-      title: "Services Description",
-      content: "I provide web development services including but not limited to: website design, e-commerce development, CMS development, LMS platforms, and custom web applications. All services are provided on a project basis as agreed upon in our contract."
-    },
-    {
-      title: "Payment Terms",
-      content: "Projects require a 50% advance payment before work begins. The remaining 50% is due upon project completion. For ongoing projects, payment schedules will be outlined in our agreement. All payments are non-refundable once work has commenced.",
-      points: [
-        "50% advance payment required to start project",
-        "Balance 50% due upon project completion",
-        "Additional revisions beyond scope may incur extra charges",
-        "Payment methods: Bank transfer, UPI, PayPal"
-      ]
-    },
-    {
-      title: "Project Timeline",
-      content: "Project timelines are estimates and may vary based on project complexity and client responsiveness. I will provide a detailed timeline during our initial consultation and keep you updated on progress.",
-      points: [
-        "Landing Pages: 1-2 weeks",
-        "E-commerce Websites: 3-6 weeks", 
-        "Custom CMS: 4-8 weeks",
-        "Complex Applications: 8+ weeks"
-      ]
-    },
-    {
-      title: "Client Responsibilities",
-      content: "As a client, you agree to:",
-      points: [
-        "Provide all necessary content, images, and information in a timely manner",
-        "Respond to queries and feedback within reasonable timeframes",
-        "Make timely payments as per agreed schedule",
-        "Provide clear and constructive feedback during review phases"
-      ]
-    },
-    {
-      title: "Intellectual Property",
-      content: "Upon full payment, you will receive full ownership of the delivered website and its code. I retain the right to display the project in my portfolio and marketing materials. Third-party assets (images, fonts, plugins) may have their own licensing terms.",
-      points: [
-        "Client receives full ownership after final payment",
-        "I retain portfolio display rights",
-        "Third-party assets subject to their respective licenses",
-        "Source code delivered upon project completion"
-      ]
-    },
-    {
-      title: "Revisions and Changes",
-      content: "Each project includes reasonable revisions as outlined in our agreement. Major changes or additions to the original scope may require additional time and cost, which will be communicated and agreed upon in advance.",
-      points: [
-        "2-3 rounds of revisions included in standard packages",
-        "Additional revisions billed at hourly rate",
-        "Scope changes require written approval",
-        "Change requests should be consolidated"
-      ]
-    },
-    {
-      title: "Warranty and Support",
-      content: "I provide 30 days of free support after project delivery for any bugs or issues. This does not cover new features, major changes, or issues caused by client modifications. Extended support plans are available.",
-      points: [
-        "30 days free bug-fixing support",
-        "Support for issues in delivered code",
-        "Excludes new features and major changes",
-        "Extended support plans available"
-      ]
-    },
-    {
-      title: "Limitation of Liability",
-      content: "I strive to deliver high-quality services, but I cannot guarantee specific business results. My liability is limited to the project fee paid. I'm not liable for indirect damages, loss of data, or business interruptions."
-    },
-    {
-      title: "Termination",
-      content: "Either party may terminate a project with written notice. If terminated by client after work has commenced, payment will be due for work completed up to that point. All materials and code remain my property until full payment is received."
-    },
-    {
-      title: "Governing Law",
-      content: "These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in Delhi, India."
-    },
-    {
-      title: "Changes to Terms",
-      content: "I reserve the right to modify these Terms at any time. Continued use of my services after changes constitutes acceptance of the modified Terms. Significant changes will be communicated to existing clients."
-    }
-  ];
+  const lastUpdated = "November 1, 2025";
 
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
@@ -129,7 +42,7 @@ const TAndC = () => {
               transition={{ delay: 0.2 }}
               className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed"
             >
-              Please read these terms carefully before using my services. 
+              Please read these terms carefully before using Our services. 
               These terms outline our mutual responsibilities and ensure a smooth working relationship.
             </motion.p>
 
@@ -187,38 +100,7 @@ const TAndC = () => {
 
             {/* Terms Sections */}
             <div className="space-y-12">
-              {sections.map((section, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="border-b border-gray-200 pb-12 last:border-b-0 last:pb-0"
-                >
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm">
-                      {index + 1}
-                    </span>
-                    {section.title}
-                  </h2>
-                  
-                  <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                    {section.content}
-                  </p>
-
-                  {section.points && (
-                    <ul className="space-y-3">
-                      {section.points.map((point, pointIndex) => (
-                        <li key={pointIndex} className="flex items-start gap-3 text-gray-700">
-                          <CheckCircle size={18} className="text-green-500 mt-1 flex-shrink-0" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </motion.div>
-              ))}
+              <TermSectionCards />
             </div>
 
             {/* Acceptance Section */}
