@@ -10,7 +10,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import Project from "./pages/Project";
-import FAQ from "./pages/Faq";
+import Faq from "./pages/Faq";
+
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/Project" element={<Project />} />
-        <Route path="/faq" element={<FAQ />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

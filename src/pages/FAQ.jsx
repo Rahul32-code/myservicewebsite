@@ -15,7 +15,7 @@ import {
   Users
 } from "lucide-react";
 
-const FAQ = () => {
+const Faq = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   const toggleFaq = (index) => {
@@ -349,4 +349,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
