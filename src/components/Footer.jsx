@@ -13,8 +13,8 @@ const Footer = () => {
     },
     {
       icon: <Mail className="h-5 w-5 text-rose-400" />,
-      name: "rahuldeveloper75@gmail.com",
-      href: "mailto:rahuldeveloper75@gmail.com",
+      name: "info@rahulcode.in",
+      href: "mailto:info@rahulcode.in",
     },
     {
       icon: <MapPin className="h-5 w-5 text-green-400" />,

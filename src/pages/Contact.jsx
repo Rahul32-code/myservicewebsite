@@ -126,8 +126,8 @@ const Contact = () => {
                   {
                     icon: Mail,
                     title: "Email",
-                    content: "rahuldeveloper75@gmail.com",
-                    link: "mailto:rahuldeveloper75@gmail.com",
+                    content: "info@rahulcode.in",
+                    link: "mailto:info@rahulcode.in",
                     description: "Send me an email",
                   },
                   {
