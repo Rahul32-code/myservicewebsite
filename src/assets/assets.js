@@ -23,6 +23,10 @@ import {
   Target,
   Award,
   Instagram,
+  Phone,
+  Mail,
+  CreditCard,
+  MessageCircle,
 } from "lucide-react";
 
 import logo from "./logo.svg";
@@ -72,8 +76,36 @@ export const socialLinks = [
     icon: Instagram,
     link: "https://www.instagram.com/rahuldeveloper/",
     name: "Instagram",
-  }
+  },
 ];
+
+export const supportOptions = [
+  {
+    icon: MessageCircle,
+    title: "Live Chat",
+    description: "Get instant answers to your questions",
+    action: "Start Chat",
+    color: "bg-green-500",
+    link: "https://wa.me/919625968793",
+  },
+  {
+    icon: Phone,
+    title: "Phone Support",
+    description: "Talk directly for complex queries",
+    action: "Call Now",
+    color: "bg-blue-500",
+    link: "tel:+919625968793",
+  },
+  {
+    icon: Mail,
+    title: "Email Support",
+    description: "Detailed responses within hours",
+    action: "Send Email",
+    color: "bg-purple-500",
+    link: "mailto:info@rahulcode.in",
+  },
+];
+
 
 // Services data
 export const services = [
@@ -291,7 +323,7 @@ export const WhyChooseUsCards = [
   },
 ];
 
-// Services Page के लिए Stats
+// Services Page
 export const servicesStats = [
   {
     number: "48",
@@ -372,3 +404,91 @@ export const colorSchemes = {
     { color: "text-orange-600", bg: "bg-orange-500" },
   ],
 };
+
+export const faqCategories = [
+  {
+    title: "General Questions",
+    icon: Globe,
+    faqs: [
+      {
+        question: "What services do you offer?",
+        answer:
+          "I offer comprehensive web development services including landing pages, e-commerce solutions, blog platforms, CMS development, LMS platforms, and dynamic websites using modern technologies like PHP, React, and Node.js.",
+      },
+      {
+        question: "How long does a typical project take?",
+        answer:
+          "Project timelines vary based on complexity. Landing pages: 1-2 weeks, E-commerce: 3-6 weeks, Custom CMS: 4-8 weeks. I provide detailed timelines during our initial consultation.",
+      },
+      {
+        question: "Do you work with international clients?",
+        answer:
+          "Yes, I work with clients worldwide. I'm comfortable with different time zones and use tools like Slack, Zoom, and email for smooth communication.",
+      },
+    ],
+  },
+  {
+    title: "Pricing & Payments",
+    icon: CreditCard,
+    faqs: [
+      {
+        question: "What's your pricing structure?",
+        answer:
+          "I offer project-based pricing for clarity. After understanding your requirements, I provide a fixed quote. For ongoing work, I also offer hourly rates and monthly retainers.",
+      },
+      {
+        question: "Do you require upfront payment?",
+        answer:
+          "I typically require a 50% deposit to start the project, with the remaining 50% due upon completion. For larger projects, we can discuss milestone-based payments.",
+      },
+      {
+        question: "What payment methods do you accept?",
+        answer:
+          "I accept bank transfers, UPI, PayPal, and other digital payment methods. All payments are secure and invoiced properly.",
+      },
+    ],
+  },
+  {
+    title: "Technical Questions",
+    icon: Database,
+    faqs: [
+      {
+        question: "What technologies do you use?",
+        answer:
+          "I work with PHP, React, Node.js, MySQL, MongoDB, Tailwind CSS, and various frameworks. I choose the best technology stack based on your project requirements.",
+      },
+      {
+        question: "Do you provide website maintenance?",
+        answer:
+          "Yes, I offer ongoing maintenance packages that include updates, security patches, backups, and technical support to keep your website running smoothly.",
+      },
+      {
+        question: "Will my website be mobile-friendly?",
+        answer:
+          "Absolutely! All websites I develop are fully responsive and optimized for all devices - desktop, tablet, and mobile.",
+      },
+    ],
+  },
+  {
+    title: "Support & Communication",
+    icon: Users,
+    faqs: [
+      {
+        question: "What's your communication process?",
+        answer:
+          "I maintain regular communication through your preferred channel (email, WhatsApp, video calls). Weekly progress updates and quick response times are my standard.",
+      },
+      {
+        question: "Do you provide post-launch support?",
+        answer:
+          "Yes, I offer 30 days of free support after project completion. After that, you can choose from my maintenance plans for ongoing support.",
+      },
+      {
+        question: "What are your working hours?",
+        answer:
+          "I'm available Monday to Saturday, 9 AM to 6 PM IST. For urgent matters, I'm reachable beyond these hours as well.",
+      },
+    ],
+  },
+];
+
